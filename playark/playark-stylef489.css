@@ -1,0 +1,539 @@
+/*
+Theme Name: PlayARK V3
+Theme URI: https://playark.com
+Author: Chris Gardner
+Description: PlayARk Theme
+Version: 3.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: playark
+*/
+/* Wordpress CSS */
+.nk-blog-post.sticky .nk-post-title:before {
+    content: "\f2a6";
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 15px;
+    -webkit-transform: rotate(-45deg) translateY(2px);
+    transform: rotate(-45deg) translateY(2px);
+}
+
+.gallery-caption {
+    display: block;
+    color: #969696;
+    color: rgba(98, 98, 98, 0.58);
+    font-size: 0.9rem;
+    padding: 0.5em 0;
+}
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+    display: none;
+}
+
+.nk-comment.bypostauthor .nk-comment-name {
+    background-color: #bf751e;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    color: #000;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+/* Table for posts */
+.nk-post-text table, .nk-comments table, .page table {
+    margin-bottom: 30px;
+    border: 1px solid #838282;
+}
+.nk-post-text table th,
+.nk-post-text table td,
+.nk-comments table th,
+.nk-comments table td,
+.page table th,
+.page table td{
+    padding: 5px 15px;
+    border-top: 1px solid #838282;
+    border-left: 1px solid #838282;
+}
+/* Fixed Large Images*/
+.nk-post-text img, .nk-forum-topic-content img{
+    max-width: 100%;
+    height: auto;
+}
+/* Fixed Multiple category list on post page*/
+.nk-categories-list{
+    vertical-align: top;
+}
+/* Fixed for Monster Widgets*/
+#wp-calendar {width: auto;min-width: 99%;}
+#wp-calendar caption { text-align: right; font-size: 12px; padding: 0; margin-bottom: 15px; }
+#wp-calendar thead { font-weight: 900; font-size: 1.2rem; }
+#wp-calendar thead th { text-align: center; padding-bottom: 10px; }
+#wp-calendar tbody td { border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 1.2rem; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 1.2rem; text-transform: uppercase; padding-top: 10px; }
+/* Fix for all buttons*/
+.nk-btn:focus{
+    outline: none;
+}
+/* Fix for Contact Form 7*/
+.wpcf7-mail-sent-ok{
+    color: #5CB85C!important;
+    border:none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.wpcf7-validation-errors,
+.wpcf7-mail-sent-ng,
+.wpcf7-spam-blocked
+{
+    color: #D9534F!important;
+    border:none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+#subscribe-email-error{
+    display: none!important;
+}
+.nk-input-group-btn.subscribe-alternate, .nk-input-group-btn .password-submit{
+    vertical-align: top;
+}
+.mc4wp-checkbox.mc4wp-checkbox-contact-form-7{
+    display: none;
+}
+span.wpcf7-not-valid-tip{
+    color: #D9534F!important;
+}
+
+/* Fixed comment button */
+.hidden.button{
+    display:none!important;
+}
+/* Fixed commentator avatar height */
+.nk-comments .nk-comment .nk-comment-avatar img {
+    height: auto;
+}
+/* Added some changes for comment form */
+.nk-comment .comment-respond {
+    padding-top: 30px;
+}
+#cancel-comment-reply-link {
+    position: relative;
+    font-size: 0.8em;
+    z-index: 2;
+}
+/* Fixed sticky if isset admin-bar*/
+.admin-bar .nk-navbar-fixed {
+    margin-top: 32px;
+}
+@media screen and (max-width: 782px) {
+    .admin-bar .nk-navbar-fixed {
+        margin-top: 46px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .admin-bar .nk-navbar-fixed {
+        margin-top: 0px;
+    }
+}
+/* Fixed Monster Widgets*/
+.nk-widget img {
+    max-width: 100%;
+    height: auto;
+}
+.nk-widget select {
+    max-width: 100%;
+}
+.nk-widget ul > li > ul > li > ul > li > ul > li > ul > li > ul ul {
+    padding-left: 0;
+}
+.responsive-embed {
+    clear: none !important;
+}
+.nk-carousel[data-dots="true"],
+.nk-carousel-2[data-dots="true"] {
+    padding-bottom: 45px;
+}
+/* Fixed VC Video Widget Conflict */
+.wpb_video_widget .wpb_wrapper .wpb_video_wrapper > div {
+    padding-bottom: 0 !important;
+}
+
+/* Fixed post list for posts without thumbnail images */
+.nk-blog-list .nk-blog-post.nk-no-img .nk-post-thumb {
+    min-height: 40px;
+}
+.nk-widget-post.nk-no-img {
+    padding-left: 0;
+}
+
+/* fixed info box Z position in some cases (for example coupon infobox on checkout page) */
+.nk-info-box {
+    z-index: 1;
+}
+.nk-product-cart-thumb img{
+    height: auto;
+    max-width: 100%;
+}
+.nk-cart .nk-store.nk-store-cart .table.nk-store-cart-products, .nk-cart .nk-store.nk-store-cart .table.nk-store-cart-products td{
+    border-color: #0e0e0e;
+}
+
+/* Disabled style for buttons */
+.nk-btn.disabled,
+.nk-btn[disabled],
+.nk-btn:disabled {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #888;
+}
+.nk-btn.disabled:before,
+.nk-btn[disabled]:before,
+.nk-btn:disabled:before {
+    opacity: 0.5;
+}
+
+/* Add custom pointer for nk Gallery if set custom link*/
+.nk-gallery-custom-link{
+    cursor: url("assets/images/cursor-gallery-item.png") 24 24,pointer
+}
+
+/* Ajax Login Form*/
+.nk-sign-form-login:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.lwa-password input,
+.lwa-username input,
+.lwa-email input,
+.lwa-remember-email input {
+    margin: 0;
+    width: 100%;
+}
+.nk-sign-form .lwa-loading {
+    background: none;
+    z-index: 1;
+}
+.nk-sign-form .lwa-loading:after {
+    content: "\f29d";
+    font-family: Ionicons;
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -14px;
+    margin-top: -27px;
+    -webkit-animation: ajax-form-loader 2s linear infinite;
+    animation: ajax-form-loader 2s linear infinite;
+}
+.nk-sign-form .lwa-loading ~ *,
+.nk-sign-form .lwa-loading ~ * input {
+    opacity: 0.4;
+}
+@-webkit-keyframes ajax-form-loader {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes ajax-form-loader {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.lwa-status {
+    margin-bottom: 25px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+}
+.lwa-status-invalid {
+    background-color: #d9534f;
+}
+.lwa-status-confirm {
+    background-color: #2fcc67;
+}
+
+
+/* Navbar Left user icon dropdown */
+.nk-navbar-left .nk-nav-icons {
+    position: relative;
+}
+.nk-navbar-left .nk-nav-icons > li {
+    position: static;
+}
+.nk-navbar-left .nk-nav-icons .nk-drop-item .dropdown {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: .3s opacity, .3s visibility;
+    transition: .3s opacity, .3s visibility;
+}
+.nk-navbar-left .nk-nav-icons .nk-drop-item:hover > .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.nk-navbar-left .nk-nav-icons .bropdown-back {
+    display: none;
+}
+
+/* Login with ajax menu items fixed*/
+.nk-menu-item-inline{
+    overflow: hidden;
+}
+.nk-menu-item-inline a{
+    float: left;
+    width: 70%;
+}
+.nk-menu-item-inline .nk-badge{
+    margin-top: 15px;
+    margin-right: 25px;
+    float: right;
+ }
+
+/* rtMedia disabled body flex*/
+body.media.buddypress{
+    display: block;
+}
+/* rtMedia fixed color search button*/
+.media_search.media_search .search_option{
+    color: #fff!important;
+}
+/* rtMedia fixed background color for drag and drop uploader container*/
+.rtmedia-uploader .drag-drop, .rtm-load-more{
+    background: #0e0e0e!important;
+}
+.rtmedia-container .rtm-load-more a{
+   padding: 8px 21px!important;
+}
+#rtmedia_go_to_num,
+.rtm-tabs-content #panel2 .imgedit-settings .imgedit-scale input[type="text"],
+.rtm-tabs-content #panel2 .imgedit-settings .imgedit-crop-ratio input[type="text"],
+.rtm-tabs-content #panel2 .imgedit-settings .imgedit-crop-sel input[type="text"],
+#rt_media_comment_form #comment_content{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #404040;
+    transition: .3s border,.3s color;
+    background: 0 0;
+    color: inherit;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.rtmedia-page-link.button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    left: 4px;
+    border: 1px solid;
+    border-radius: 0;
+    transition: .3s background-color,.3s border-color;
+    z-index: 1;
+}
+
+.rtmedia-page-link.button:hover {
+    background-color: #0e0e0e;
+    box-shadow: 0 5px 15px 0 rgba(14,14,14,.4);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.rtm-tabs li.active a{
+    color: white!important;
+}
+.rtm-tabs a {
+    color: #848181;
+}
+.rtm-comment-list li{
+    background: #0e0e0e!important;
+}
+.rtmedia-comment-media-list{
+    padding: 0px;
+}
+button.rtmedia-comment-media-upload{
+    background-color: inherit;
+    color: white;
+    border: none;
+}
+.rtm-like-comments-info:after{
+    display: none;
+}
+.rtmedia-like-info, .mfp-content .rtm-single-meta{
+    background: #0e0e0e!important;
+}
+.nk-social-profile-info-name a{
+    color: inherit;
+}
+#rtm-modal-container{
+    color: black;
+}
+ul.rtmedia-list-media:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* fixed Menu Icons*/
+.menu-item i._mi{
+    margin-top: auto!important;
+}
+
+/* fixed Login With Ajax Menu*/
+ul.nk-lwa-menu.nk-nav{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    perspective: 600px;
+    perspective-origin: center top;
+}
+ul.nk-lwa-menu.nk-nav li{
+    position: static;
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+ul.nk-lwa-menu.nk-nav li a{
+    font-size: 2rem;
+    padding: 12px 0px;
+    color: inherit;
+    overflow: hidden;
+    font-weight: 700;
+    width: 80%;
+}
+.on_switch_block_screen_img + .nk-awb-wrap > .nk-awb-overlay{
+	background-color:unset!important;
+}
+.ark_on_switch_text_image{
+	width:35%;
+	height:auto;
+}
